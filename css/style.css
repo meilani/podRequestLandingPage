@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  background-color: #121725;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5a668a;
+  padding: 100px 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-size: 52px;
+  color: #54e6af;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 62px;
+}
+
+span {
+  color: #fff;
+}
+
+input {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+form {
+  background-color: #2c344b;
+  max-width: 415px;
+  border-radius: 28px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+label {
+  visibility: hidden;
+}
+
+input[type=email] {
+  padding: 15px 0;
+}
+
+input[type=submit] {
+  background-color: #54e6af;
+  color: #121725;
+  padding: 18px 27px;
+  text-transform: capitalize;
+  border-radius: 28px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
