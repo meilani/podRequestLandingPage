@@ -1,6 +1,10 @@
-$dark-blue: #121725;
+$darker-blue: #121725;
+$dark-blue: #2c344B;
 $blue: #5a668a;
+$light-blue: #c2cbe5;
 $green: #54e6af;
+$light-green: #b3ffe2;
+$white: #ffffff;
 
 * {
     padding: 0;
@@ -10,14 +14,29 @@ $green: #54e6af;
 
 body {
     font-family: 'Chivo', sans-serif;
-    background-color: $dark-blue;
+    background-color: $darker-blue;
+    background-image: url(../assets/desktop/image-host.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
-    color: $blue;
+    color: $light-blue;
     padding: 100px 165px;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/******** TEXT ********/
+
+.cta {
+    background-color: $darker-blue;
+    padding: 88px 50px 0 0;
+    max-width: 723px;
+    margin-top: 125px;
 }
 
 h1 {
@@ -26,27 +45,32 @@ h1 {
     text-transform: uppercase;
     font-weight: 300;
     line-height: 62px;
+    margin-bottom: 24px;
+}
+
+p {
+    margin-bottom: 40px;
+    max-width: 445px;
 }
 
 span {
-    color: #fff;
+    color: $white;
 }
 
-input {
-    font-weight: 700;
-    font-size: 14px;
-}
+/******** FORM ********/
 
 form {
-    background-color: #2c344b;
+    background-color: $dark-blue;
     max-width: 415px;
     border-radius: 28px;
+    margin-bottom: 64px;
 }
 
 input {
     background-color: transparent;
     border: none;
     font-size: 14px;
+    font-weight: 700;
 }
 
 label {
@@ -59,12 +83,33 @@ input[type=email] {
 
 input[type=submit] {
     background-color: $green;
-    color: $dark-blue;
+    color: $darker-blue;
     padding: 18px 27px;
     text-transform: capitalize;
     border-radius: 28px;
 
     &:hover {
         cursor: pointer;
+        background-color: $light-green;
     }
+}
+
+
+/******** LOGOS ********/
+.logos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.logos a {
+    margin-right: 40px;
+    color: $blue;
+}
+
+.dots {
+    float: right;
+    margin-top: -65px;
+    margin-right: -150px;
 }
