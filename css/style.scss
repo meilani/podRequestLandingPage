@@ -13,48 +13,79 @@ $white: #ffffff;
 }
 
 html {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 body {
     font-family: 'Chivo', sans-serif;
-    font-size: 1rem;
-    line-height: 1.3;
     color: $light-blue;
     background-color: $darker-blue;
+    font-size: .75rem;
+    line-height: 1.67;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
 }
 
-h1 {
-    font-size: 2.9rem;
-    line-height: 1.2;
-    color: $white;
+
+h2 {
+    color: $green;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.46;
+    text-align: center;
+    margin-bottom: .8rem;
+
+    span {
+        color: #fff;
+    }
+}
+
+p {
+    margin-bottom: 1.65rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+}
+
+li {
+    max-width: 25%;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+button, 
+input {
+    width: 100%;
+    border-radius: 28px;
+    padding: .45rem 1.6rem;
+    border: none;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: .7rem;
+    line-height: 2;
 }
 
 button {
-    border-radius: 28px;
+    cursor: pointer;
     background-color: $green;
     color: $darker-blue;
-    font-weight: bold;
-    font-size: .8rem;
-    padding: 1rem 1.5rem;
-    transition: all .3s ease-in;
-}
-
-button:hover {
-    background-color: $light-green;
 }
 
 input {
-    border-radius: 28px;
     background-color: $dark-blue;
-    border: none;
-    padding: 1rem;
-    color: $white;
-    text-transform: uppercase;
-}
-
-header {
-    padding-top: 7.2rem;
+    margin-bottom: .8rem;
+    color: #fff;
 }
 
 ::placeholder {
@@ -71,8 +102,47 @@ header {
     width: 1px;
 }
 
-.error-msg {
-    font-size: .7rem;
-    color: #fb3e3e;
+.img-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(18, 23, 37, .93);
+        top: 0;
+    }
+}
+
+.logo-wrap {
+    position: relative;
+    margin: 3.1rem 1rem 2.85rem;
+}
+
+.content-wrap {
+    position: relative;
+    background-color: transparent;
+    padding: 0 1rem;
+    max-width: 367px;
+    margin: 0 auto 1rem;
+
+    @media screen and (min-width: 768px) {
+        background-color: $darker-blue;
+        padding: 4.65rem 2.2rem 0 0;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        padding: 4.4rem 2.9rem 0 0;
+    }
 }
 
