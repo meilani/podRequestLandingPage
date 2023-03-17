@@ -281,12 +281,14 @@ input {
 }
 .content-wrap p {
   margin-bottom: 1.65rem;
+  line-height: 1.67;
 }
 @media screen and (min-width: 768px) {
   .content-wrap p {
     max-width: 445px;
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    line-height: 1.56;
   }
 }
 .content-wrap .msg {
