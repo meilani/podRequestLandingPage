@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
   
@@ -24,36 +24,68 @@
             (min-width: 768px) 491px,
             100vw"
       src="/assets/mobile/image-host.jpg"
-      alt="a man in a recording studio wearing headphones and speaking into a microphone" />
+      alt="a man in a recording studio wearing headphones and speaking into a microphone" 
+    >
     <div class="overlay"></div>
   </div>
+  <img
+    class="dots"
+    src="/assets/desktop/bg-pattern-dots.svg"
+    alt=""
+    
+  >
   <div class="logo-wrap">
     <img class="logo-img" src="assets/desktop/logo.svg" alt="Pod" width="135" height="56">
   </div>
   <div class="content-wrap">
     <h2>Publish your podcasts<br><span>everywhere.</span></h2>
     <p>
-      Upload your autdio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
     </p>
-    <ul>
-      <li>
-        <img src="/assets/desktop/spotify.svg" alt="Spotify" width="56" height="17">
-      </li>
-      <li>
-        <img src="/assets/desktop/apple-podcast.svg" alt="Apple Podcast" width="45" height="17">
-      </li>
-      <li>
-        <img src="/assets/desktop/google-podcasts.svg" alt="Google Podcasts" width="73" height="11">
-      </li>
-      <li>
-        <img src="/assets/desktop/pocket-casts.svg" alt="Pocket Casts" width="77" height="15">
-      </li>
-    </ul>
-    <form>
-      <label class="hidden-text" for="email">Email address</label>
-      <input id="email" type="email" required placeholder="Email Address" autocomplete="email">
-      <button type="submit">Request Access</button>
-    </form>
+    <div class="list-form-group">
+      <ul>
+        <li>
+          <img 
+            sizes="(min-width: 768px) 96px,
+                    56px"
+            src="/assets/desktop/spotify-2.svg" 
+            alt="Spotify"
+          >
+        </li>
+        <li>
+          <img 
+            src="/assets/desktop/apple-podcast-2.svg"
+            alt="Apple Podcast" 
+            sizes="(min-width: 768px) 78px,
+                  45px"
+          >
+        </li>
+        <li>
+          <img 
+            src="/assets/desktop/google-podcasts-2.svg"
+            alt="Google Podcasts" 
+            sizes="(min-width: 768px) 125px,
+                    73px"
+          >
+        </li>
+        <li>
+          <img 
+            src="/assets/desktop/pocket-casts-2.svg" 
+            alt="Pocket Casts"
+            sizes="(min-width: 768px) 129px,
+                    77px"
+          >
+        </li>
+      </ul>
+      <div class="form-wrap">
+        <form>
+          <label class="hidden-text" for="email">Email address</label>
+          <input id="email" type="email" required placeholder="Email Address" autocomplete="email">
+          <button type="submit">Request Access</button>
+        </form>
+        <p class="msg"></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
